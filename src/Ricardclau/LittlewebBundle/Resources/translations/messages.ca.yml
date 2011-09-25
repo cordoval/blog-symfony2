@@ -1,3 +1,6 @@
+head:
+  description: Petit tutorial en Symfony2
+  keywords: tutorial, Symfony2
 menu:
   home: Inici
   company: Empresa

@@ -1,3 +1,6 @@
+head:
+  description: Small tutorial in Symfony2
+  keywords: tutorial, Symfony2
 menu:
   home: Home
   company: Company
