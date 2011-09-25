@@ -1,0 +1,25 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="{{ app.request.get('_locale') }}">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta content="index,follow" name="robots"/>
+        <meta content="{% block description %}{% trans %} head.description {% endtrans %}{% endblock %}" name="description"/>
+        <meta content="{% block keywords %}{% trans %} head.keywords {% endtrans %}{% endblock %}" name="keywords"/>
+        <meta content="7 days" name="revisit-after"/>
+        <title>LittleWeb {% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <header>
+            {% include 'RicardclauLittlewebBundle::menu.html.twig' %}
+        </header>
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+        <footer>
+            {% include 'RicardclauLittlewebBundle::footer.html.twig' %}
+        </footer>
+    </div>
+    </body>
+</html>
+{% endspaceless %}

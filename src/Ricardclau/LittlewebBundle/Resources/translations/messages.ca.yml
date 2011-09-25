@@ -1,0 +1,8 @@
+menu:
+  home: Inici
+  company: Empresa
+  whoweare: Qui som?
+sections:
+  home: Això és el contingut de la pàgina principal
+  company: Aquí aniria la presentació de l'empresa
+  whoweare: Aquí aniria el llistat d'empleats

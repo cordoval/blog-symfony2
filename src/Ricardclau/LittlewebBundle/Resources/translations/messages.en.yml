@@ -1,0 +1,8 @@
+menu:
+  home: Home
+  company: Company
+  whoweare: Who we are?
+sections:
+  home: This is our home page content
+  company: Here goes our company presentation
+  whoweare: Here goes the employee list
