@@ -1,5 +1,7 @@
+{# menu.html.twig #}
 <nav>
     <ul>
+    {# Small menu to access other languages #}
     {% for index, lang in {'ca':'Català', 'es':'Castellano', 'en':'English'} %}
        {% if index != app.request.get('_locale') %}
        <li><a href="{{ path('index', { '_locale': index }) }}">{{ lang }}</a></li>
@@ -9,6 +11,7 @@
 </nav>
 <nav>
 <ul>
+    {# Website content #}
     <li><a href="{{ path('index', { '_locale': app.request.get('_locale')}) }}">{% trans %} menu.home {% endtrans %}</a></li>
     <li><a href="{{ path(['company_', app.request.get('_locale')]|join) }}">{% trans %} menu.company {% endtrans %}</a></li>
     <li><a href="{{ path(['whoweare_', app.request.get('_locale')]|join) }}">{% trans %} menu.whoweare {% endtrans %}</a></li>
